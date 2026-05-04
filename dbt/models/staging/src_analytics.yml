@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: analytics
+    schema: analytics
+    tables:
+      - name: dim_channel
+      - name: dim_keyword
+      - name: fact_video
+      - name: bridge_video_keyword

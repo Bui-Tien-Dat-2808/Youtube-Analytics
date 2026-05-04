@@ -157,9 +157,3 @@ All modules use the shared logger in `shared/logging/logger.py`. Logging is enab
 - Business logic stays out of the Airflow DAG.
 - Spark JDBC is used for loading the warehouse, not `pandas.to_sql`.
 - The warehouse load is idempotent by truncating target tables and reloading from the clean layer.
-
-## Suggested CV bullets
-
-- Built an end-to-end YouTube analytics platform using Python, PySpark, Apache Iceberg, PostgreSQL, dbt, Airflow, Superset, and Docker Compose.
-- Designed a layered data architecture with raw and clean Iceberg zones, incremental ingestion, and a PostgreSQL star schema.
-- Implemented scheduled orchestration every 3 hours and analytics marts for top videos, channel engagement, and daily video trends.
